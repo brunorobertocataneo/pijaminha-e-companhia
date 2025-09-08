@@ -1,0 +1,50 @@
+header{
+	position: fixed;
+    width: 100%;
+	left: 0;
+	top: 0;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+	border-bottom: 4px solid #F6B800;
+	background: linear-gradient(135deg, #0f0f1e 0%, #1f1f3a 100%);
+}
+
+.logo{
+     font-family: "Fredoka", sans-serif;
+     font-size: 2rem;
+     font-weight: 900;
+     text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+header nav ul {
+    display: flex;
+    gap: 48px;
+}
+
+header nav ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
+header nav ul a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F6B800;
+    transition: width 0.5s ease;
+}
+header nav ul li:hover::after{
+    width: 100%;
+}

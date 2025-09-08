@@ -1,0 +1,204 @@
+* {
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Monteserrat", sans-serif;
+}
+
+body{
+	background-color: #0f0f1e;
+	color: #fff;
+	font: 16px;
+}
+
+.section{
+	padding: 0;
+	background: linear-gradient(135deg, #0f0f1e 0%, #1b1b33 100%);
+}
+
+.section.alt{
+	background: linear-gradient(135deg, #14142a 0%, #0f0f1e 100%);
+}
+
+.section-inner{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+@media (max-width: 900px){
+	.section{ padding: 0; }
+	.section-inner{ padding: 30px 15px; }
+	.section h2{ font-size: 1.8rem; }
+}
+
+@media (max-width: 600px){
+	.section{ padding: 0; }
+	.section-inner{ padding: 20px 10px; }
+}
+
+.section h2{
+	font-family: "Fredoka", sans-serif;
+	font-size: 2.2rem;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.section .lead{
+	color: #b8b8d0;
+}
+
+.section p{
+	color: #d9d9ec;
+	line-height: 1.7;
+	margin-bottom: 15px;
+	text-align: justify;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 0;
+	margin: 0;
+}
+
+.card{
+	background: rgba(255, 255, 255, 0.04);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	padding: 20px;
+	text-align: center;
+}
+
+.list{
+	margin: 10px 0;
+	padding-left: 18px;
+}
+
+.list li{
+	list-style: disc;
+	color: #d9d9ec;
+	margin-bottom: 8px;
+	text-align: left;
+}
+
+.team{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 0;
+	margin: 0;
+}
+
+.member{
+	background: rgba(255, 255, 255, 0.04);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	padding: 20px;
+	text-align: left;
+}
+
+.member h3{
+	font-size: 1.1rem;
+	margin-bottom: 8px;
+	text-align: left;
+}
+
+.pricing{
+	font-weight: 700;
+	color: #F6B800;
+	font-size: 1.4rem;
+	margin: 20px 0;
+	text-align: center;
+	background: rgba(246, 184, 0, 0.1);
+	padding: 15px;
+	border-radius: 8px;
+	border: 1px solid rgba(246, 184, 0, 0.3);
+}
+
+/* Ajustes de espaçamento apenas para Mercado, Equipe e Gestão */
+#mercado.section,
+#equipe.section,
+#gestao.section{
+	padding: 0;
+}
+
+#mercado h2,
+#equipe h2,
+#gestao h2{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#mercado h3,
+#equipe h3,
+#gestao h3{
+	font-size: 1.3rem;
+	margin: 20px 0 10px 0;
+	text-align: left;
+	color: #F6B800;
+}
+
+#mercado p,
+#equipe p,
+#gestao p{
+	margin-bottom: 15px;
+	text-align: justify;
+}
+
+#mercado .grid,
+#equipe .grid,
+#gestao .grid{
+	gap: 0;
+	margin: 0;
+}
+
+#mercado .list,
+#equipe .list,
+#gestao .list{
+	margin: 15px 0 25px 0;
+	padding-left: 20px;
+}
+
+#equipe .team{
+	gap: 20px;
+	margin: 20px 0;
+}
+
+#equipe .member{
+	padding: 25px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#equipe .member h3{
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+	color: #F6B800;
+	text-align: left;
+}
+
+#equipe .member .list{
+	margin: 10px 0;
+	padding-left: 20px;
+}
+
+@media (max-width: 900px){
+	#mercado.section,
+	#equipe.section,
+	#gestao.section{ padding: 0; }
+	#mercado .section-inner,
+	#equipe .section-inner,
+	#gestao .section-inner{ padding: 0; }
+}
+
+@media (max-width: 600px){
+	#mercado.section,
+	#equipe.section,
+	#gestao.section{ padding: 0; }
+	#mercado .section-inner,
+	#equipe .section-inner,
+	#gestao .section-inner{ padding: 0; }
+}
